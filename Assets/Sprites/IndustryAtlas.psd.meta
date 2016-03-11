@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 09dfb8eab75347b49b5c5a212c1985ef
-timeCreated: 1457592228
+timeCreated: 1457716498
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: IndustryAtlas_0
+    21300000: IndustryPlatform
+    21300002: shitok
+    21300004: lamp
+    21300006: IndustryPlatformCroped
+    21300008: pill
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,15 +54,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: IndustryAtlas_0
+    - name: IndustryPlatform
       rect:
         serializedVersion: 2
         x: 0
-        y: 965
-        width: 353
-        height: 59
+        y: 953
+        width: 389
+        height: 71
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shitok
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 916
+        width: 71
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: lamp
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 940
+        width: 68
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IndustryPlatformCroped
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 886
+        width: 348
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pill
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 620
+        width: 247
+        height: 248
+      alignment: 9
+      pivot: {x: .498380542, y: .493951619}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
