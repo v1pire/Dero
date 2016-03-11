@@ -2,26 +2,20 @@
 using System.Collections;
 
 public class Rotate : MonoBehaviour {
-	int healthDamage;
+    int healthDamage = 50;
+    public float angle = 5;
+
+    void FixedUpdate()
+    {
+        
+        transform.Rotate(Vector3.forward, angle * Time.deltaTime);
+    }
+
+	void OnCollisionStay2D(Collision2D coll) 
+    {
+		if (coll.gameObject.tag == "Player")coll.gameObject.GetComponent<PlayerController> ().HealthDamage (healthDamage);
+	}
 
 
-	// Use this for initialization
-	void Start () {
-		healthDamage = 50;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-			
-	}
-
-	void OnCollisionStay2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Player")
-			coll.gameObject.GetComponent<PlayerController> ().HealthDamage (healthDamage);
-	}
 		
-	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Player")
-			coll.gameObject.GetComponent<PlayerController> ().HealthDamage (healthDamage);
-	} 
 }
