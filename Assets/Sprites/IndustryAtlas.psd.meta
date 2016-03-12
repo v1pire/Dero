@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 09dfb8eab75347b49b5c5a212c1985ef
-timeCreated: 1457716498
+timeCreated: 1457786363
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,7 @@ TextureImporter:
     21300004: lamp
     21300006: IndustryPlatformCroped
     21300008: pill
+    21300010: ExitTable
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -103,6 +104,16 @@ TextureImporter:
         height: 248
       alignment: 9
       pivot: {x: .498380542, y: .493951619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ExitTable
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 772
+        width: 68
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
