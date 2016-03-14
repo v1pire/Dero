@@ -2,20 +2,23 @@
 using System.Collections;
 
 public class Switcher : MonoBehaviour, IUseble {
-    public IAction action;
+    bool isOn = false;
     public SpriteRenderer lamp;
-    public GameObject OnUSeAction;//тут хрень
-
-    public void Use(params string[] args)
-    { 
-        action.ActionStart();
-        SetLampState(true);
-        
+    
+    public bool GetState()//внешний
+    {
+        return isOn;
     }
 
-    void SetLampState(bool isGreenLight)
+    public void Use(params string[] args)//внешний
     {
-        if (isGreenLight == true) lamp.color = Color.green;
+        isOn = true;
+        SetLampState();  
+    }
+
+    public void SetLampState()//общий
+    {
+        if (isOn == true) lamp.color = Color.green;
         else lamp.color = Color.red;
     }
 
@@ -32,8 +35,4 @@ public class Switcher : MonoBehaviour, IUseble {
         if (other.gameObject.tag == "Player") other.GetComponent<PlayerController>().activeUsebleObject = null;
     }
 
-    void Start()
-    {
-        action = OnUSeAction.GetComponent<IAction>();//тут хрень
-    }
 }
